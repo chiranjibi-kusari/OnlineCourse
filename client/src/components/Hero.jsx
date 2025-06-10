@@ -76,9 +76,9 @@ console.log("error in fetchCourse",error);
        {
         courses.map((course)=>(
           <div key={course._id} className='p-4'>
-            <div className='relative flex-shrink-0 w-60 transition-transform duration-300 hover:scale-105 '>
+            <div className='relative flex-shrink-0 w-40 transition-transform duration-300 hover:scale-105 '>
               <div className='bg-gray-900 rounded-lg overflow-hidden items-center flex flex-col'>
-              <img src={course.image.url} alt="" className='h-24 w-24'/>
+              <img src={course.image.url} alt="" className='h-16 w-16'/>
               <div className='p-4 text-center'>
                 <h2 className='text-xl font-bold text-white'>{course.title}</h2>
                 <button className='bg-orange-500 text-white py-2 px-4 rounded-full mt-4 hover:bg-blue-500 duration-300'>Enroll Now</button>
