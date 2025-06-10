@@ -18,7 +18,7 @@ const app = express();
 const port = process.env.PORT;
 
 app.use(cors({
-  origin:"http://localhost:5173",
+  origin:["http://localhost:5173",'https://online-course-tau.vercel.app'],
   credentials:true,
   methods:["GET","POST","PUT","DELETE"],
   allowedHeaders:["Content-Type","Authorization"],
