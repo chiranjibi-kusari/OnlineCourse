@@ -14,7 +14,7 @@ const Hero = () => {
  useEffect(()=>{
    const fetchCources=async()=>{
   try {
-     const response=await axios.get(`${BACKEND_URL}/course/courses`,{withCredentials:true})
+     const response=await axios.get(`${BACKEND_URL}/course/course`,{withCredentials:true})
      console.log(response.data.course);
      setCourses(response.data.course)
      

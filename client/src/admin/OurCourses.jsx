@@ -24,7 +24,7 @@ const OurCourses = () => {
     const fetchCources = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:4001/api/v1/course/courses",
+          "http://localhost:4001/api/v1/course/course",
           { withCredentials: true }
         );
         console.log(response.data.course);

@@ -19,7 +19,7 @@ const UpdateCourse = () => {
   useEffect(()=>{
   const fetchCourseData=async ()=>{
     try {
-           const {data}=await axios.get(`${BACKEND_URL}/course/${id}`,{withCredentials:true})
+           const {data}=await axios.get(`${BACKEND_URL}/course/course/${id}`,{withCredentials:true})
       console.log("data",data);
       setTitle(data.course.title)
       setDescription(data.course.description)
