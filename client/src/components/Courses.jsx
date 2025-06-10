@@ -35,7 +35,7 @@ const Courses = () => {
     const fetchCources = async () => {
       try {
         const response = await axios.get(
-          `${BACKEND_URL}/courses`,
+          `${BACKEND_URL}/course`,
           { withCredentials: true }
         );
         console.log(response.data.course);
