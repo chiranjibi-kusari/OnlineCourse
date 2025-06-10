@@ -40,7 +40,7 @@ const Purchases = () => {
       }
       try {
         const response = await axios.get(
-          `${BACKEND_URL}/api/v1/user/purchases`,
+          `${BACKEND_URL}/user/purchases`,
           
           {
             headers: { Authorization: `Bearer ${token}` },
@@ -48,6 +48,8 @@ const Purchases = () => {
           }
         );
         setPurchases(response.data.courseData);
+        console.log(response.data.courseData);
+        
       } catch (error) {
         setErrorMessage(
      "failed to purchased data"
