@@ -53,7 +53,7 @@ const Courses = () => {
         `${BACKEND_URL}/user/logout`,
         { withCredentials: true }
       );
-      toast.success(await response.data.message);
+      toast.success(response.data.message);
       localStorage.removeItem("user")
       setIsLoggedIn(false);
     } catch (error) {
