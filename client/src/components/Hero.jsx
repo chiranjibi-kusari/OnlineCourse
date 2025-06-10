@@ -65,13 +65,13 @@ console.log("error in fetchCourse",error);
   };
   return (
     <div className='text-white text-center px-32'>
-      <h1 className='text-orange-400 font-bold text-2xl'>DIGITALEARN</h1>
+      <h1 className='text-orange-400 font-bold text-xl'>DIGITALEARN</h1>
       <p className='text-gray-500 py-2'>Sharp yout skills with courses crafted by experts.</p>
       <div className='flex justify-center gap-4 py-2'>
-        <Link className='bg-green-500 py-2 px-4 rounded-md font-semibold text-xl hover:text-black duration-300 transition-all' to={('/courses')}>Explore Courses</Link>
-        <Link to={'https://www.youtube.com/@crwvlogs9273'} className='bg-white text-black py-2 px-4 rounded-md font-semibold text-xl hover:text-red-600 duration-300 transition-all'>Courses Videos</Link>
+        <Link className='bg-green-500 py-1 px-2 rounded-md font-semibold text-md hover:text-black duration-300 transition-all' to={('/courses')}>Explore Courses</Link>
+        <Link to={'https://www.youtube.com/@crwvlogs9273'} className='bg-white text-black py-1 px-2 rounded-md font-semibold text-md hover:text-red-600 duration-300 transition-all'>Courses Videos</Link>
       </div>
-      <div className='py-8'>
+      <div className='py-4'>
       <Slider {...settings}>
        {
         courses.map((course)=>(
