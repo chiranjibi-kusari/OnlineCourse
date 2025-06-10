@@ -40,7 +40,7 @@ const Purchases = () => {
       }
       try {
         const response = await axios.get(
-          `${BACKEND_URL}/api/v1course/purchases`,
+          `${BACKEND_URL}/api/v1/course/purchases`,
           
           {
             headers: { Authorization: `Bearer ${token}` },
