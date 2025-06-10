@@ -45,7 +45,7 @@ const Home = () => {
   return (
     <div className="bg-gradient-to-r from-black to-blue-950 h-screen">
       <header>
-        <div className="bg-gradient-to-r from-black to-blue-950 text-white pt-4 px-32">
+        <div className="bg-gradient-to-r from-black to-blue-950 text-white pt-2 px-32">
           <div className="flex justify-between items-center">
             <div className="flex justify-center items-center gap-4 ">
               <img
